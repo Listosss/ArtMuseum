@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ArtMuseum/static/css/main.21724871.css",
+    "main.js": "/ArtMuseum/static/js/main.e493d820.js",
+    "index.html": "/ArtMuseum/index.html",
+    "main.21724871.css.map": "/ArtMuseum/static/css/main.21724871.css.map",
+    "main.e493d820.js.map": "/ArtMuseum/static/js/main.e493d820.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21724871.css",
+    "static/js/main.e493d820.js"
+  ]
+}
