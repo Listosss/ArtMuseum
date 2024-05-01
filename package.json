@@ -1,4 +1,5 @@
 {
+	"homepage": "http://Listosss.github.io/ArtMuseum",
 	"name": "museum-app",
 	"version": "0.1.0",
 	"private": true,
@@ -28,6 +29,8 @@
 	},
 	"scripts": {
 		"start": "craco start",
+		"predeploy" : "npm run build",
+		"deploy": "gh-pages -d build",
 		"build": "craco build",
 		"test": "craco test",
 		"eject": "react-scripts eject"
@@ -51,15 +54,14 @@
 		]
 	},
 	"devDependencies": {
+		"@babel/plugin-proposal-private-property-in-object": "7.21.11",
 		"@craco/craco": "^7.1.0",
 		"@eslint/js": "^9.1.1",
 		"eslint": "^8.57.0",
 		"eslint-config-react": "^1.1.7",
 		"eslint-plugin-react": "^7.34.1",
+		"gh-pages": "^6.1.1",
 		"globals": "^15.1.0",
-		"typescript-eslint": "^7.8.0",
-		"jest": "<current-version>",
-		"@babel/plugin-proposal-private-property-in-object": "7.21.11"
+		"typescript-eslint": "^7.8.0"
 	}
-	
 }
