@@ -1,0 +1,32 @@
+.footer{
+    height: 127px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20px;
+}
+.footerLogoBlack{
+    background-image: url(../../assets/museum-logo-bl.png);
+    width: 206px;
+    height: 63px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.modsenLogo{
+    height: 59px;
+    width: 164px;
+    background-image: url(../../assets/modsen.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 560px) {
+    .footerLogoBlack{
+        height: 43px;
+        width: 186px;
+    }
+    .modsenLogo{
+        height: 39px;
+        width: 144px;
+    }  
+}

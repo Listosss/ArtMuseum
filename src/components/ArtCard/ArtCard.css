@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.artCardImg {
+	width: 387px;
+	height: 444px;
+}
+
+.artCardImg img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.artCardWrapper {
+	max-width: fit-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.artCardDescr {
+	width: calc(100% - 53px);
+	height: 132px;
+	background-color: #f0f1f1;
+	margin-top: -60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 32px 24px 32px 24px;
+}
+
+.artCardInfo {
+	max-width: 73%;
+	height: 100%;
+}
+
+.artLink {
+	text-decoration: none;
+	color: black;
+}
+
+.artLink h1 {
+	font-family: "Inter", sans-serif;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 500;
+	overflow: hidden;
+	line-height: 26px;
+	max-height: 26px;
+}
+
+.artCardInfo > p {
+	font-family: "Inter", sans-serif;
+	color: #e0a449;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 26px;
+	overflow: hidden;
+	max-height: 26px;
+	cursor: default;
+	max-height: 26px;
+}
+
+.artCardInfo div {
+	margin-top: 8px;
+}
+
+.artCardType {
+	font-family: "Inter", sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 26px;
+	cursor: default;
+	overflow: hidden;
+}
+
+.saveToFavIcon {
+	cursor: pointer;
+	box-sizing: border-box;
+	height: 59px;
+	width: 59px;
+	background-color: rgba(251, 215, 178, 0.3);
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.saveToFavIcon svg {
+	cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+	.artCardImg {
+		width: 328px !important;
+		height: 385px;
+	}
+
+	.artCardDescr {
+		padding: 26px 20px !important;
+	}
+
+	.artCardType {
+		font-size: 14px;
+		line-height: 20px;
+		max-height: 20px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.artCardImg {
+		width: 301px !important;
+		height: 358px;
+	}
+
+	.artCardDescr {
+		padding: 20px 16px !important;
+	}
+
+	.artLink h1 {
+		line-height: 20px !important;
+		max-height: 20px !important;
+	}
+
+	.saveToFavIcon {
+		height: 50px;
+		width: 50px;
+	}
+
+	.saveToFavIcon svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	.artCardDescr {
+		height: 112px;
+	}
+}
+
+@media (max-width: 1050px) {
+	.artCardImg {
+		width: 274px !important;
+		height: 322px;
+	}
+	.artLink h1 {
+		font-size: 16px !important;
+	}
+}
+
+@media (max-width: 950px) {
+	.artCardImg {
+		width: 248px !important;
+		height: 296px;
+	}
+}
+
+@media (max-width: 840px) {
+	.artCardImg {
+		width: 387px !important;
+		height: 444px;
+	}
+	.artLink h1 {
+		font-size: 18px;
+	}
+	.saveToFavIcon {
+		height: 59px;
+		width: 59px;
+	}
+
+	.saveToFavIcon svg {
+		width: 25px;
+		height: 25px;
+	}
+	.artCardWrapper {
+		width: 387px !important;
+	}
+}
+
+@media (max-width: 465px) {
+	.artCardImg {
+		width: 100% !important;
+		height: 407px;
+	}
+	.artLink h1 {
+		font-size: 16px;
+	}
+	.artCardWrapper {
+		min-width: 320px !important;
+	}
+	.saveToFavIcon {
+		height: 50px;
+		width: 50px;
+	}
+
+	.saveToFavIcon svg {
+		width: 20px;
+		height: 20px;
+	}
+}

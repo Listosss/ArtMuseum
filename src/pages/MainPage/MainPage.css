@@ -1,0 +1,158 @@
+.mainPageSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+.findArtText{    
+    font-size: 64px;
+    
+    color: #282828;
+}
+.orangeAfter::after{
+    content: 'Art';
+    display: inline-block;
+    font-size: 64px;
+    color: rgb(255, 111, 0);
+}
+.searchDiv{
+    margin-top: 92px;
+    width: 762px;
+    height: 64px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.searchDiv input{
+    width: 100%;
+    padding: 16px 48px 16px 16px;
+    border: 1px solid #2828282c;
+    font-size: 16px;
+    line-height: 17px;
+    color: #282828;
+    border-radius: 10px;
+}
+.searchDiv input:focus{
+    outline: none;
+}
+.searchIcon{
+    position: absolute;
+    right: 8px;
+}
+.orangeSecTitle{
+    font-size: 16px;
+    color: rgb(255, 149, 0);
+    word-spacing: 1px;
+    font-weight: 400;
+}
+.graySecTitle{
+    font-size: 32px;
+    color: #282828;
+    font-weight: 400;
+}
+
+.customSelect {
+    margin-top: 30px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.customSelect p{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.selectFilter {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    font-size: 16px;
+    height: 41px;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: #fff;
+    border: 1px solid#2828282c;
+    border-radius: 10px;
+    color: rgb(96, 95, 95);
+    cursor: pointer;
+}
+
+.selectFilter:focus {
+    outline: none;
+}
+
+.customSelect::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 35px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../assets/arrow_down.png);
+    background-size: contain;
+}
+
+
+@media (max-width: 1290px) {
+    .favoritesWrapper{
+        width: 830px;
+    }
+    .findArtText, .orangeAfter::after{
+        font-size: 54px;
+    }
+}
+@media (max-width: 1050px){
+    .mainPageSection{
+        margin-top: 100px !important;
+    }
+}
+@media (max-width: 830px) {
+    .favoritesWrapper{
+        width: 85%;
+    }
+    .findArtText, .orangeAfter::after{
+        font-size: 44px;
+    }
+    .searchDiv{
+        width: 580px;
+    }
+    .mainForm{
+        width: 80%;
+    }
+    .searchDiv{
+        width: 100%;
+    }
+}
+@media (max-width: 620px) {
+    .findArtText, .orangeAfter::after{
+        font-size: 40px;
+    }
+}
+@media (max-width: 500px) {
+    .findArtText, .orangeAfter::after{
+        font-size: 37px;
+    }
+    .graySecTitle{
+        font-size: 28px !important;
+    }
+}
+@media (max-width: 410px) {
+    .findArtText, .orangeAfter::after{
+        font-size: 34px;
+    }
+    .favPageSection{
+        margin-top: 60px;
+    }
+    .searchDiv input{
+        font-size: 14px;
+    }
+    .searchIcon svg{
+        width: 28px;
+        height: 28px;
+    }
+    .mainPageSection{
+        margin-top: 80px;
+    }
+}

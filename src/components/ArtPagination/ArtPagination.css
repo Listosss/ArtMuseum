@@ -1,0 +1,155 @@
+.artGallerySection {
+    width: 1280px;
+    margin-top: 40px;
+    min-height: 514px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.artGalleryDiv {
+    width: 100%;
+    display: flex;
+    gap: 58px;
+}
+
+.artsLoader {
+    position: absolute;
+    margin-top: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.paginationButtons {
+    margin-top: 24px;
+    display: flex;
+}
+
+.pagButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgba(57, 57, 57, 1);
+}
+
+.pagButton:disabled {
+    background-color: rgba(241, 121, 0, 1);
+    color: white;
+    font-weight: 600;
+}
+
+.pagArrowButton {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.nextPagButton,
+.prevPagButton {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    margin-left: -10px;
+}
+
+.nextPagButton::before,
+.nextPagButton::after,
+.prevPagButton::before,
+.prevPagButton::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 10px;
+    background-color: rgba(57, 57, 57, 1);
+}
+
+.nextPagButton::before,
+.prevPagButton::after {
+    transform: rotate(45deg);
+}
+
+.nextPagButton::after,
+.prevPagButton::before {
+    transform: rotate(-45deg);
+}
+
+.nextPagButton::before,
+.prevPagButton::before {
+    top: 10px;
+}
+
+.nextPagButton::after,
+.prevPagButton::after {
+    top: 16px;
+}
+
+.nextPagButton:disabled,
+.prevPagButton:disabled {
+    display: none;
+}
+
+
+
+
+@media (max-width: 1350px) {
+    .artGallerySection {
+        width: 1080px !important;
+        
+    }
+    .artGalleryDiv {
+        gap: 48px !important;
+    }
+}
+
+@media (max-width: 1150px) {
+    .artGallerySection {
+        width: 980px !important;
+    }
+    .artGalleryDiv {
+        gap: 38px !important;
+    }
+}
+
+@media (max-width: 1050px) {
+    .artGallerySection {
+        width: 880px !important;
+        height: 484px !important;
+    }
+    .artGalleryDiv {
+        gap: 28px !important;
+    }
+}
+
+@media (max-width: 950px) {
+    .artGallerySection {
+        width: 780px !important;
+    }
+    .artGalleryDiv {
+        gap: 18px !important;
+    }
+}
+@media (max-width: 840px) {
+    .artGallerySection {
+        width: 80%!important;
+        height: 1650px !important;
+    }
+    .artGalleryDiv {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px !important;
+    }
+}
+
+@media (max-width: 465px) {
+    .artGallerySection {
+        
+        height: 1550px !important;
+    }
+    
+}

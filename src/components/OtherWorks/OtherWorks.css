@@ -1,0 +1,20 @@
+.otherWorksWrapper{
+    width:1280px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.otherWrapper{
+    position: relative;
+}
+@media (max-width: 1290px) {
+    .otherWorksWrapper{
+        width: 830px;
+    }
+}
+@media (max-width: 830px) {
+    .otherWorksWrapper{
+        width: 80%;
+    }
+}

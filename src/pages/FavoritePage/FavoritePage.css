@@ -1,0 +1,94 @@
+
+.favPageSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+.favpTitle{
+    font-size: 64px;   
+    color: #282828;
+}
+.favpOrangeTitle{
+    font-size: 64px;
+    color: rgb(255, 111, 0);
+    display: flex;
+    align-items: center;
+}
+.favpOrangeTitle::before{
+    content: '';
+    display: inline-block;
+    background-image: url(../../assets/favicon2.png);
+    height: 74px;
+    width: 74px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.orangeSecTitle{
+    font-size: 16px;
+    color: rgb(255, 149, 0);
+    word-spacing: 1px;
+    font-weight: 400;
+}
+.graySecTitle{
+    font-size: 32px;
+    color: #282828;
+    font-weight: 400;
+}
+.flexCenter{
+    margin: 40px auto 120px auto;
+    display: flex;
+    justify-content: center;
+}
+.favoritesWrapper{
+    width:1280px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.nothingFavText,.favLoading{
+    margin: 110px 0;
+}
+.nothingFavText>h1{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 100;
+    color: rgba(52, 51, 51, 1);
+}
+
+@media (max-width: 1290px) {
+    .favoritesWrapper{
+        width: 830px;
+    }
+    .favpTitle, .favpOrangeTitle{
+        font-size: 54px;
+    }
+    .favpOrangeTitle::before{  
+        height: 64px;
+        width: 64px;
+    }
+}
+@media (max-width: 830px) {
+    .favoritesWrapper{
+        width: 80%;
+    }
+    .favpTitle, .favpOrangeTitle{
+        font-size: 44px;
+    }
+    .favpOrangeTitle::before{  
+        height: 54px;
+        width: 54px;
+    }
+}
+@media (max-width: 406px) {
+    .favpTitle, .favpOrangeTitle{
+        font-size: 34px;
+    }
+    .favpOrangeTitle::before{  
+        height: 54px;
+        width: 54px;
+    }
+    .favPageSection{
+        margin-top: 80px;
+    }
+}
